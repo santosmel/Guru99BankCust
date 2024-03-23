@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Guru99Bank Test">
+    <test name="Customer">
+        <parameter name="url" value="https://demo.guru99.com/v4/"/>
+        <parameter name="username" value="mngr136913"/>
+        <parameter name="userPassword" value="Omn@12"/>
+        <parameter name="expectedTitle" value="Guru99 Bank Manager HomePage"/>
+
+        <parameter name="name" value="Twenty Twenty"/>
+        <parameter name="dob" value="01/20/2000"/>
+        <parameter name="addr" value="Araw"/>
+        <parameter name="city" value="Cityland"/>
+        <parameter name="state" value="Awestate"/>
+        <parameter name="pinno" value="410100"/>
+        <parameter name="tel" value="9201234517"/>
+        <parameter name="email" value="test20@test.com"/>
+        <parameter name="password" value="pw20"/>
+
+
+        <!-- Edit Values -->
+        <parameter name="eaddr" value="Day"/>
+        <parameter name="ecity" value="Laland"/>
+        <parameter name="estate" value="Stateless"/>
+        <parameter name="epinno" value="525288"/>
+        <parameter name="etel" value="9201234500"/>
+        <parameter name="eemail" value="test00@test.com"/>
+
+        <classes>
+                <class name="Guru99BankTest.Customer">
+                    <methods>
+                        <!--<exclude name="AddCustomer"/>
+                        <exclude name="GetCustomerid"/>
+                        <exclude name="DisplayCust"/>-->
+                        <exclude name="EditCustomer"/>
+                        <exclude name="DeleteCustomer"/>
+                     </methods>
+                 </class>
+
+             </classes>
+     </test>
+
+ </suite>
